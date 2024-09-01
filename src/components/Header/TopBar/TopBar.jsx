@@ -11,7 +11,7 @@ const TopBar = () => {
     const t = useTranslations('TopBar');
 
     return (
-        <div className="hidden min-[1000px]:block pt-[16px] pb-[12px]">
+        <div className="hidden min-[1000px]:block pt-[16px] pb-[12px] bg-white">
             <div className="wrapper">
                 <div className="flex items-center justify-between">
                     <ul className="flex items-center gap-[24px]">
