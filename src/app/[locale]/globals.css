@@ -1,3 +1,35 @@
+@font-face {
+    font-family: '29LTRegular';
+    src: url('/assets/fonts/alfont_com_29LT-Zarid-Serif-Regular-2.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: '29LTBold';
+    src: url('/assets/fonts/alfont_com_29LTZaridSlab-Bold.ttf') format('truetype');
+  }
+  
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --Primary-500: #5A25F5;
+    --Primary-400: #7B51F7;
+    --Primary-200: #BDA8FB;
+    --Primary-25: #EFE9FE;
+
+    --Neutrals-500: #1C1E42;
+    --Neutrals-purple-300: #77788E;
+    --Neutrals-purple-500: #1C1E42;
+
+    --Secondary-Creamy-50: #FAF9F6;
+    --Secondary-Creamy-400: #E2DDCD;
+    --Secondary-Creamy-25: #FBFBF9;
+    
+    
+}
+
+body {
+    font-family: '29LTRegular', sans-serif;
+  }
