@@ -2,5 +2,29 @@
     "HomePage": {
       "title": "مرحبا بالعالم!",
       "about": "انتقل إلى صفحة حول"
+    },
+    "TopBar": {
+      "about": "عن المعهد",
+      "store": "المتجر",
+      "visit-us": "زورونا",
+      "happening": "يحدث الأن",
+      "personal-account": "الحساب الشخصي",
+      "technical-file": "الملف الفني",
+      "logout": "تسجيل الخروج",
+      "userName": "نسرين حرفوش"
+    },
+    "Navbar": {
+      "general-programs": "البرامج العامة",
+      "training-develop": "التدريب والتطوير",
+      "residency-programs": "برامج الإقامة",
+      "misk-scholarship": "منحة مسك",
+      "research-publications": "الأبحاث والمنشورات",
+      "exhibitions": "المعارض",
+      "misk-art-week": "أسبوع مسك للفنون",
+      "learn-about-residence": "تعرف علي اقامه مسك",
+      "residence-area": "اقامه مساحة",
+      "international-residencies": "الاقامات الدولية",
+      "research": "الابحاث",
+      "publications": "المنشورات"
     }
   }

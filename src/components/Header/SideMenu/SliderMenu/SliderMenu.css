@@ -1,0 +1,33 @@
+/* :dir(rtl) */
+ .slider-menu {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    transition: transform 0.4s ease-in-out;
+}
+
+.dir-ltr .slider-menu {
+    left: auto;
+    right: 0;
+    transform: translateX(100%);
+}
+
+.dir-rtl .slider-menu {
+    right: auto!important;
+    left: 0!important;
+    transform: translateX(-100%) !important;
+}
+
+.dir-ltr .slider-menu.open,
+.dir-rtl .slider-menu.open {
+    transform: translateX(0)!important;
+}
+
+
+ .slider-menu-scroll {
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    padding-bottom: 80px;
+}

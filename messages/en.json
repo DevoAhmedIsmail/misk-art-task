@@ -2,5 +2,29 @@
     "HomePage": {
       "title": "Hello world!",
       "about": "Go to the about page"
+    },
+    "TopBar": {
+      "about": "About",
+      "store": "Store",
+      "visit-us": "Visit us",
+      "happening": "Happening now",
+      "personal-account": "Personal Account",
+      "technical-file": "Technical File",
+      "logout": "Logout",
+      "userName": "Nesreen Harfoush"
+    },
+    "Navbar": {
+      "general-programs": "Programs",
+      "training-develop": "Training",
+      "residency-programs": "Residency Programs",
+      "misk-scholarship": "Scholarship",
+      "research-publications": "Research & Publications",
+      "exhibitions": "Exhibitions",
+      "misk-art-week": "Misk Art Week",
+      "learn-about-residence": "Learn about the residence permit in Misk",
+      "residence-area": "Residence area",
+      "international-residencies": "International residencies",
+      "research": "Research",
+      "publications": "Publications"
     }
   }

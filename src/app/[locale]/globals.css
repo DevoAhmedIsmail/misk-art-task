@@ -1,35 +1,71 @@
 @font-face {
-    font-family: '29LTRegular';
-    src: url('/assets/fonts/alfont_com_29LT-Zarid-Serif-Regular-2.otf') format('opentype');
-  }
-  
-  @font-face {
-    font-family: '29LTBold';
-    src: url('/assets/fonts/alfont_com_29LTZaridSlab-Bold.ttf') format('truetype');
-  }
-  
+  font-family: "29LTRegular";
+  src: url("/assets/fonts/alfont_com_29LT-Zarid-Serif-Regular-2.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "29LTBold";
+  src: url("/assets/fonts/alfont_com_29LTZaridSlab-Bold.ttf") format("truetype");
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-    --Primary-500: #5A25F5;
-    --Primary-400: #7B51F7;
-    --Primary-200: #BDA8FB;
-    --Primary-25: #EFE9FE;
+  --Primary-500: #5a25f5;
+  --Primary-400: #7b51f7;
+  --Primary-200: #bda8fb;
+  --Primary-25: #efe9fe;
 
-    --Neutrals-500: #1C1E42;
-    --Neutrals-purple-300: #77788E;
-    --Neutrals-purple-500: #1C1E42;
+  --Neutrals-500: #1c1e42;
+  --Neutrals-purple-300: #77788e;
+  --Neutrals-purple-500: #1c1e42;
 
-    --Secondary-Creamy-50: #FAF9F6;
-    --Secondary-Creamy-400: #E2DDCD;
-    --Secondary-Creamy-25: #FBFBF9;
-    
-    
+  --Secondary-Creamy-50: #faf9f6;
+  --Secondary-Creamy-400: #e2ddcd;
+  --Secondary-Creamy-25: #fbfbf9;
 }
 
 body {
-    font-family: '29LTRegular', sans-serif;
-  }
+  font-family: "29LTRegular", sans-serif;
+  color: var(--Neutrals-500);
+}
+
+/* Wrapper */
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 172px;
+}
+
+@media (max-width: 1300px) {
+    .wrapper {
+        padding: 0 120px; 
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        padding: 0 80px; 
+    }
+}
+
+@media (max-width: 1100px) {
+    .wrapper {
+        padding: 0 50px; 
+    }
+}
+
+/* @media (max-width: 768px) {
+    .wrapper {
+        padding: 0 20px; 
+    }
+} */
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 0 24px; 
+    }
+}
