@@ -1,7 +1,8 @@
 {
     "HomePage": {
-      "title": "Hello world!",
-      "about": "Go to the about page"
+      "page-title": "Misk Art Week Archive",
+      "page-subTitle": "The first edition of Misk Art Week was launched in 2017 and the week has continued to develop year after year.",
+      "prev-link-1": "Misk Art Week"
     },
     "TopBar": {
       "about": "About",
