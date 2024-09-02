@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useRef, useState } from "react";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +8,7 @@ import "./Dropdown.css";
 // Images
 import ArrowDown from "/public/assets/icons/Arrow down.svg"
 
-export default function Dropdown({ subElement, children, className = "",translateText }) {
+export default function Dropdown({ subElement, children, className = "", translateText, select, onSelect }) {
   const t = useTranslations(translateText);
 
   const [isShowing, setIsShowing] = useState(false);
@@ -59,11 +59,20 @@ export default function Dropdown({ subElement, children, className = "",translat
             {
               subElement.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.href} className="text-nowrap">
                   {
-                    translateText ? t(item.name) : item.name
+                    select ? (
+                      <p className="cursor-pointer" onClick={() => onSelect(item.name)}>
+                        {t(item.name)}
+                      </p>
+                    ) : (
+                      <Link href={item.href} className="text-nowrap">
+                        {
+                          translateText ? t(item.name) : item.name
+                        }
+                      </Link>
+                    )
                   }
-                  </Link>
+
                 </li>
               ))
             }

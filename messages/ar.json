@@ -44,7 +44,9 @@
       "residence-area": "اقامه مساحة",
       "international-residencies": "الاقامات الدولية",
       "research": "الابحاث",
-      "publications": "المنشورات"
+      "publications": "المنشورات",
+      "search-placeholder": "ابحث عن ما تريد",
+      "search": "ابحث"
     },
     "Footer": {
       "institute": "المعهد",

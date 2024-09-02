@@ -43,7 +43,9 @@
       "residence-area": "Residence area",
       "international-residencies": "International residencies",
       "research": "Research",
-      "publications": "Publications"
+      "publications": "Publications",
+      "search-placeholder": "Search what you want",
+      "search": "Search"
     },
     "Footer": {
       "institute": "The Institute",

@@ -16,7 +16,9 @@
 :root {
   --Primary-500: #5a25f5;
   --Primary-400: #7b51f7;
+  --Primary-300: #9C7CF9;
   --Primary-200: #bda8fb;
+  --Primary-50: #E6DEFD;
   --Primary-25: #efe9fe;
 
   --Neutrals-500: #1c1e42;
@@ -31,10 +33,6 @@
 body {
   font-family: "29LTRegular", sans-serif;
   color: var(--Neutrals-500);
-}
-
-.dir-ltr {
-    /* font-family: ; */
 }
 
 /* Wrapper */
