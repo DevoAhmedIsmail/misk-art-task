@@ -9,6 +9,7 @@ import navbarData from "@/constant/navbarData"
 
 // images
 import logo from "/public/assets/icons/Logo.svg"
+import Popup from "@/animation/Popup";
 
 const Navbar = () => {
   const t = useTranslations('Navbar');
@@ -16,31 +17,35 @@ const Navbar = () => {
     <div className='bg-[var(--Secondary-Creamy-25)] py-[24px] min-[1000px]:py-[16px]'>
       <div className="wrapper">
         <div className="flex items-center justify-between">
-          <div className="w-[126px] h-[56px] relative">
-              <Image src={logo} fill alt="logo" className="object-cover"  />
-          </div>
+          <Popup>
+            <div className="w-[126px] h-[56px] relative">
+                <Image src={logo} fill alt="logo" className="object-cover"  />
+            </div>
+          </Popup>
 
           <ul className="hidden min-[1000px]:flex items-center gap-[32px]">
             {
               // Navbar Links
               navbarData.map((item,index)=>(
                 <li key={index}>
-                  {
-                    item.href ? (
-                      <Link href={item.href} className="font-[600] text-nowrap">
-                        {t(item.name)}
-                      </Link>
-                    ) : (
-                      <Dropdown
-                        subElement={item.subElement}
-                        translateText="Navbar"
-                      >
-                        <p className="font-[600] text-nowrap">
+                  <Popup delay={index * 0.1}>
+                    {
+                      item.href ? (
+                        <Link href={item.href} className="font-[600] text-nowrap">
                           {t(item.name)}
-                        </p>
-                      </Dropdown>
-                    )
-                  }
+                        </Link>
+                      ) : (
+                        <Dropdown
+                          subElement={item.subElement}
+                          translateText="Navbar"
+                        >
+                          <p className="font-[600] text-nowrap">
+                            {t(item.name)}
+                          </p>
+                        </Dropdown>
+                      )
+                    }
+                  </Popup>
                 </li>
               ))
             }

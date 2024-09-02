@@ -16,7 +16,7 @@ const NavSearch = () => {
         className="cursor-pointer"
         onClick={()=> setIsOpenSearch(true)}
        />
-
+      
        <SearchLayout
         isOpenSearch={isOpenSearch}
         setIsOpenSearch={setIsOpenSearch}

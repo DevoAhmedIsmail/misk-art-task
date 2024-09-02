@@ -8,6 +8,8 @@ import "./Dropdown.css";
 
 // Images
 import ArrowDown from "/public/assets/icons/Arrow down.svg"
+import Popup from "@/animation/Popup";
+import { AnimatePresence } from "framer-motion";
 
 export default function Dropdown({ subElement, children, className = "", translateText, select, onSelect }) {
   const t = useTranslations(translateText);
@@ -50,36 +52,42 @@ export default function Dropdown({ subElement, children, className = "", transla
         />
 
       </div>
-      {isShowing && (
-        <div
-          className={`dropdown ${className}`}
-          ref={dropdownRef}
-          onClick={() => setIsShowing(false)}
-        >
-          <ul className="dropdown-menu">
-            {
-              subElement.map((item, index) => (
-                <li key={index}>
-                  {
-                    select ? (
-                      <p className="cursor-pointer" onClick={() => onSelect(item.name)}>
-                        {t(item.name)}
-                      </p>
-                    ) : (
-                      <Link href={item.href} className="text-nowrap">
-                        {
-                          translateText ? t(item.name) : item.name
-                        }
-                      </Link>
-                    )
-                  }
+      <AnimatePresence mode="wait">
+        {isShowing && (
+          <Popup y={1}>
+            <div
+              className={`dropdown ${className}`}
+              ref={dropdownRef}
+              onClick={() => setIsShowing(false)}
+            >
+              <ul className="dropdown-menu">
+                {
+                  subElement.map((item, index) => (
+                    <li key={index}>
+                      {
+                        select ? (
+                          <p className="cursor-pointer" onClick={() => onSelect(item.name)}>
+                            {t(item.name)}
+                          </p>
+                        ) : (
+                          <Link href={item.href} className="text-nowrap">
+                            {
+                              translateText ? t(item.name) : item.name
+                            }
+                          </Link>
+                        )
+                      }
 
-                </li>
-              ))
-            }
-          </ul>
-        </div>
-      )}
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+
+          </Popup>
+        )}
+
+      </AnimatePresence>
     </div>
   );
 }
