@@ -1,12 +1,15 @@
-import PageHeader from '@/components/Shared/PageHeader/PageHeader';
 import { useTranslations } from 'next-intl';
+import PageHeader from '@/components/Shared/PageHeader/PageHeader';
+import WeekCard from '@/components/Shared/WeekCard/WeekCard';
 
 // Images
 import Week1 from '/public/assets/images/week-7.png';
 import Week2 from '/public/assets/images/week-8.png';
 import Week3 from '/public/assets/images/week-9.png';
 import Week4 from '/public/assets/images/week-10.png';
-import WeekCard from '@/components/Shared/WeekCard/WeekCard';
+import dotsIcon from "/public/assets/icons/dots.svg"
+import Image from 'next/image';
+
 export default function HomePage() {
   const t = useTranslations('HomePage');
 
@@ -102,6 +105,17 @@ export default function HomePage() {
               />
             ))
           }
+        </div>
+
+        <div className='cursor-pointer border border-[var(--Neutrals-purple-500)] px-[59px] py-[14px] flex items-center justify-center gap-[8px] w-fit mx-auto mb-[115px] min-[910]:mb-[130px]'>
+          <p>{t("view-more")}</p>
+
+          <Image 
+            src={dotsIcon}
+            alt='dots'
+            width={20}
+            height={20}
+          />
         </div>
       </div>
 
