@@ -1,8 +1,10 @@
 import Image from 'next/image'
-import CheckIcon from "/public/assets/icons/Check.svg"
-import Button from '../Button/Button'
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Button from '../Button/Button'
+
+// images
+import CheckIcon from "/public/assets/icons/Check.svg"
 
 const WeekCard = ({ img, title, date, place, features, href }) => {
     const t = useTranslations('HomePage');
@@ -15,7 +17,7 @@ const WeekCard = ({ img, title, date, place, features, href }) => {
                             src={img}
                             alt={title}
                             fill
-                            className='w-full h-full object-cover'
+                            className='object-cover w-full h-full'
                         />
                     </div>
                     

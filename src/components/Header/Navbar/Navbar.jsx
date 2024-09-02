@@ -1,14 +1,14 @@
 import Image from "next/image"
 import {useTranslations} from 'next-intl';
-
-import navbarData from "@/constant/navbarData"
 import Link from "next/link"
-import Dropdown from "../../Shared/Dropdown/Dropdown"
-// images
-import logo from "/public/assets/icons/Logo.svg"
 import NavSearch from "../../Header/TopBar/NavSearch/NavSearch";
 import ChangeLanguage from "../../Header/TopBar/ChangeLanguage/ChangeLanguage";
 import SideMenu from "../SideMenu/SideMenu";
+import Dropdown from "../../Shared/Dropdown/Dropdown"
+import navbarData from "@/constant/navbarData"
+
+// images
+import logo from "/public/assets/icons/Logo.svg"
 
 const Navbar = () => {
   const t = useTranslations('Navbar');

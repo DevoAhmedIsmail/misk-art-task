@@ -1,6 +1,5 @@
-import React from 'react'
-import FlexLayoutFooter from '../FlexLayoutFooter/FlexLayoutFooter'
 import { useTranslations } from 'next-intl'
+import FlexLayoutFooter from '../FlexLayoutFooter/FlexLayoutFooter'
 
 const InstitutionInfo = () => {
     const t = useTranslations("Footer")

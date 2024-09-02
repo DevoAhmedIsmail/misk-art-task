@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import PageHeader from '@/components/Shared/PageHeader/PageHeader';
 import WeekCard from '@/components/Shared/WeekCard/WeekCard';
+import Image from 'next/image';
 
 // Images
 import Week1 from '/public/assets/images/week-7.png';
@@ -8,7 +9,6 @@ import Week2 from '/public/assets/images/week-8.png';
 import Week3 from '/public/assets/images/week-9.png';
 import Week4 from '/public/assets/images/week-10.png';
 import dotsIcon from "/public/assets/icons/dots.svg"
-import Image from 'next/image';
 
 export default function HomePage() {
   const t = useTranslations('HomePage');
@@ -118,10 +118,6 @@ export default function HomePage() {
           />
         </div>
       </div>
-
-
-
-
     </div>
   );
 }

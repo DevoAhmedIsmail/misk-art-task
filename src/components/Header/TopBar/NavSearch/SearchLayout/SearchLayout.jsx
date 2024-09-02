@@ -1,9 +1,9 @@
 "use client"
 
+import { useEffect, useState } from "react"
+import Image from "next/image"
 import Dropdown from "@/components/Shared/Dropdown/Dropdown"
 import Button from "@/components/Shared/Button/Button"
-import Image from "next/image"
-import { useEffect, useState } from "react"
 import "./SearchLayout.css"
 
 // images

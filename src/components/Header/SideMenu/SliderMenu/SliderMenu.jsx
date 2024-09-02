@@ -2,16 +2,17 @@ import Image from "next/image"
 import { useTranslations } from "next-intl"
 import ChangeLanguage from "../../TopBar/ChangeLanguage/ChangeLanguage"
 import NavSearch from "../../TopBar/NavSearch/NavSearch"
-import Button from "@/components/Shared/Button/Button"
 import SliderMenuItem from "./SliderMenuItem/SliderMenuItem"
 
+import Button from "@/components/Shared/Button/Button"
 import navbarData from "@/constant/navbarData"
+import topBarData from "@/constant/topBarData"
+
 import "./SliderMenu.css"
 // images
 import logo from "/public/assets/icons/Logo.svg"
 import crossIcon from "/public/assets/icons/cross.svg"
 import avatar from "/public/assets/icons/User Avatar Placholder.svg"
-import topBarData from "@/constant/topBarData"
 
 const SliderMenu = ({ isOpen, setIsOpen }) => {
   const t = useTranslations()

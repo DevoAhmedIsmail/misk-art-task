@@ -1,7 +1,6 @@
-import footerData from '@/constant/footerData'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
-import React from 'react'
+import footerData from '@/constant/footerData'
 
 const FooterLinks = () => {
     const t = useTranslations("Footer")

@@ -1,9 +1,8 @@
-import React from 'react'
+import { useTranslations } from 'next-intl'
 import FooterLinks from './FooterLinks/FooterLinks'
 import SubscribeNewsLetter from './SubscribeNewsLetter/SubscribeNewsLetter'
 import InstitutionInfo from './InstitutionInfo/InstitutionInfo'
 import InstitutionMedia from './InstitutionMedia/InstitutionMedia'
-import { useTranslations } from 'next-intl'
 
 const Footer = () => {
     const t = useTranslations("Footer")

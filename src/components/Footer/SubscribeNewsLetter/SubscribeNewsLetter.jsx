@@ -1,6 +1,5 @@
-import Button from '@/components/Shared/Button/Button'
 import { useTranslations } from 'next-intl'
-import React from 'react'
+import Button from '@/components/Shared/Button/Button'
 import FlexLayoutFooter from '../FlexLayoutFooter/FlexLayoutFooter'
 
 const SubscribeNewsLetter = () => {

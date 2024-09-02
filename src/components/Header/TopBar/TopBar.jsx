@@ -1,11 +1,9 @@
-import Image from "next/image"
-import UserImage from "/public/assets/icons/User Avatar Placholder.svg"
 import Link from "next/link"
 import {useTranslations} from 'next-intl';
 import NavSearch from "./NavSearch/NavSearch";
 import ChangeLanguage from "./ChangeLanguage/ChangeLanguage";
 import UserInfo from "./UserInfo/UserInfo";
-import topBarData from "@/constant/TopBarData";
+import topBarData from "@/constant/topBarData";
 
 const TopBar = () => {
     const t = useTranslations('TopBar');

@@ -1,14 +1,13 @@
-import React from 'react'
-import FlexLayoutFooter from '../FlexLayoutFooter/FlexLayoutFooter'
+import Link from 'next/link'
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import FlexLayoutFooter from '../FlexLayoutFooter/FlexLayoutFooter'
 
 // Images
 import LinkedInIcon from "/public/assets/icons/social/LinkedIn.svg"
 import FacebookIcon from "/public/assets/icons/social/Facebook.svg"
 import InstagramIcon from "/public/assets/icons/social/Instagram.svg"
 import XIcon from "/public/assets/icons/social/X.svg"
-import Link from 'next/link'
-import Image from 'next/image'
 const InstitutionMedia = () => {
     const t = useTranslations("Footer");
 

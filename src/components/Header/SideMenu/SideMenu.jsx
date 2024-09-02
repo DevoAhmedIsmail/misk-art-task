@@ -1,11 +1,13 @@
 "use client";
 
-import Image from "next/image"
 import { useState } from "react";
+import Image from "next/image"
 
 import SliderMenu from "./SliderMenu/SliderMenu"
-import MenuIcon from "/public/assets/icons/Menu.svg"
 import Button from "@/components/Shared/Button/Button";
+
+// images
+import MenuIcon from "/public/assets/icons/Menu.svg"
 
 const SideMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
