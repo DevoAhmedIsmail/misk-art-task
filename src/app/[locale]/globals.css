@@ -33,6 +33,10 @@ body {
   color: var(--Neutrals-500);
 }
 
+.dir-ltr {
+    /* font-family: ; */
+}
+
 /* Wrapper */
 .wrapper {
     max-width: 1440px;
