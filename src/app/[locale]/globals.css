@@ -71,3 +71,19 @@ body {
         padding: 0 24px; 
     }
 }
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--Primary-50);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--Primary-500);
+  }
