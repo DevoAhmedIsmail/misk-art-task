@@ -6,6 +6,11 @@ import TopBar from '@/components/Header/TopBar/TopBar';
 import Navbar from '@/components/Header/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 
+export const metadata = {
+  title: 'Misk',
+  description: 'Misk Art Week',
+}
+
 export default async function LocaleLayout({
   children,
   params: {locale}
