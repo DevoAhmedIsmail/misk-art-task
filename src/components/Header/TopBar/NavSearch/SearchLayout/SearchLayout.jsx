@@ -28,7 +28,7 @@ const SearchLayout = ({ isOpenSearch, setIsOpenSearch }) => {
 
     return (
         <div className='relative search-layout'>
-            <div className="absolute top-[48px] end-[48px]">
+            <div className="absolute top-[28px] end-[28px] min-[500px]:top-[48px] min-[500px]:end-[48px]">
                 <Button
                     classes="!bg-[var(--Primary-50)] !px-[14px] !py-[14px]"
                     clickHandler={() => setIsOpenSearch(false)}
@@ -42,7 +42,7 @@ const SearchLayout = ({ isOpenSearch, setIsOpenSearch }) => {
                 </Button>
             </div>
 
-            <div className="flex items-center bg-white border border-[var(--Primary-500)] flex-col min-[600px]:flex-row">
+            <div className="flex items-center bg-white border border-[var(--Primary-500)] flex-col min-[600px]:flex-row max-w-[90%]">
                 <div className="flex flex-row items-center">
                     <div className="px-[20px] py-[5px] border-e-[2px] border-[var(--Primary-500)]">
                         <Dropdown
